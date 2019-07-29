@@ -1,5 +1,5 @@
 struct Calculation {
-	double num1;
+	double conflict;
 	double number2;
 	char op;
 	double result;
