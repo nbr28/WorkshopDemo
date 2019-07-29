@@ -4,4 +4,3 @@ struct Calculation {
 	char op;
 	double result;
 };
-
