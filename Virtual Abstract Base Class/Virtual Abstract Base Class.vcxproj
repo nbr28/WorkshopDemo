@@ -20,10 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{B7380241-9E8F-4806-988D-55A618C0A9E2}</ProjectGuid>
-    <RootNamespace>VirtualExamples</RootNamespace>
+    <ProjectGuid>{9FE06E5A-8FF7-443E-89E0-B138DA42B5DA}</ProjectGuid>
+    <RootNamespace>VirtualAbstractBaseClass</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Virtual Inhertiance Examples</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -124,12 +123,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Child.h" />
-    <ClInclude Include="Grandchild.h" />
-    <ClInclude Include="Parrent.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
