@@ -6,5 +6,7 @@ using namespace std;
 
 class Parent {
 public:
-	virtual void hi() { cout << " I am the parrent" << endl; }
+	virtual void hi() { 
+		cout << " I am the parent" << endl; 
+	}
 };
