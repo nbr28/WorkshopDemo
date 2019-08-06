@@ -23,8 +23,7 @@ int main()
 	parent = (Parent)child;
 	parent.hi();
 
-
-	cout <<"--------" <<endl;
+	cout << "--------" << endl;
 	Parent* p_Pointer;
 	//Assign to pointer 
 	p_Pointer = new Parent();
@@ -38,8 +37,22 @@ int main()
 	p_Pointer = &grandchild2;
 	p_Pointer->hi();
 
+	Parent* arr[] = { &child, &grandchild, &parent };
+	Parent arr2[]= { child, grandchild, parent };
+	for (int i = 0; i < 3; i++)
+	{
+		cout << "Array Output: " << endl;
+		arr[i]->hi();
+		arr2[i].hi();
+	}
 
 
+	//dynamic casting
+	////dynamic casting
+	//Parent* ppointer = &child2;
+	////Child* cpointer = dynamic_cast<Child*>(&parent);
+	//ppointer->hi();
+	//cpointer->hi();
 
 
 	//GrandChild grandchild;

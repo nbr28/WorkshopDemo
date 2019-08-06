@@ -13,7 +13,6 @@ public:
 	int c_public = 2;
 	void foo()
 	{
-
 		//can access all d_ but only public and protected b_ variables
 	}
 

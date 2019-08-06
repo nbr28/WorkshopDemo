@@ -21,6 +21,7 @@ int main()
 	cout << p1.get() << endl;
 
 	// transfers ownership to p2 
+	//unique_ptr<A> p2 = p1;
 	unique_ptr<A> p2 = move(p1);
 	p2->show();
 	cout << p1.get() << endl;
@@ -54,6 +55,8 @@ int main()
 	cout << sp1.get() << endl;
 	cout << sp2.use_count() << endl;
 	cout << sp2.get() << endl;
+
+	
 
 	return 0;
 

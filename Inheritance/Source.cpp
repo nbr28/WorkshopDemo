@@ -7,8 +7,11 @@ int main()
 
 	Parent p;
 	Child c;
+	//Show public vs Protected
+
+
 	p.p_public=5;//can access public
-	
+	//casting
 	p = (Parent)c;
 
 	//c.p_public = 6;
