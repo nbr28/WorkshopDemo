@@ -2,6 +2,8 @@
 #include "Child.h"
 #include "Parrent.h"
 #include "Grandchild.h"
+#include "iTalk.h"
+#include "Father.h"
 
 using namespace std;
 
@@ -18,11 +20,19 @@ int main()
 	child.hi();
 	grandchild.hi();
 
-	cout << "--------" << endl;
+	
 
+	cout << "--------" << endl;
+	//show move or copy
+	child.value = 5;//modify value to show copy or move
 	parent = (Parent)child;
 	parent.hi();
+	parent.value = 10;
+	parent.hi();
+	child.Parent::hi();
 
+	parent = (Parent)grandchild;
+	parent.hi();
 	cout << "--------" << endl;
 	Parent* p_Pointer;
 	//Assign to pointer 
@@ -33,9 +43,10 @@ int main()
 	p_Pointer = &child2;
 	p_Pointer->hi();//child
 
+	
 	Grandchild grandchild2;
-	p_Pointer = &grandchild2;
-	p_Pointer->hi();
+	Parent& refPer = grandchild2;
+	refPer.hi();
 
 	Parent* arr[] = { &child, &grandchild, &parent };
 	Parent arr2[]= { child, grandchild, parent };
@@ -59,6 +70,14 @@ int main()
 
 	//Child* p_child = &grandchild;
 	//p_child->hi();//grandchild
+	cout << "--------" << endl;
+	cout << "Array Output: " << endl;
+	Father father;
+	iTalk* baseArray[] = { &child, &grandchild, &parent, &father };
+	for (int i = 0; i < 4; i++)
+	{
+		baseArray[i]->iSay();
+	}
 
 	return 0;
 }

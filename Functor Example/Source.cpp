@@ -9,7 +9,7 @@ public:
 	A(int _x):x(_x){}
 	int x;
 
-	bool operator()() { return x; }
+	bool operator() () { return x; }
 };
 
 template<typename T>
