@@ -16,5 +16,6 @@ int main() {
 	std::future<double> f = p.get_future();
 	std::thread t(task, std::ref(f));
 	p.set_value(12.34);
+	//p.set_value(34.56);
 	t.join();
 }

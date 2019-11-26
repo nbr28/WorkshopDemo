@@ -1,6 +1,7 @@
 #pragma once
 #include "Base.h"
 #include "iExample.h"
+using namespace std;
 class Child :
 	public Parent, public iExample
 {
@@ -14,6 +15,11 @@ public:
 	void foo()
 	{
 		//can access all d_ but only public and protected b_ variables
+	}
+	void display()
+	{
+		cout << "c_public: " << this->c_public<< endl;
+		this->Parent::display();
 	}
 
 	int get_p_protected() { return this->p_protected; }

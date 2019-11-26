@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+class dumb {};
+
 template<typename T>
 T add(T a, T b)
 {
@@ -25,20 +27,15 @@ class A {
 	
 public:
 	T t;
-	A() {
-		t = 0;
-	}
-	A(T a)
-	{
-		t = a;
-	}
-
+	A() {t = 0;}
+	A(T a){t = a;}
 };
 
 int main()
 {
 
 	add<int>(1.1, 3);//auto cast
+	//add<>(2.2, 3);
 	add<>(2, 3);
 	add(3.0, 4.4);
 	
@@ -46,6 +43,7 @@ int main()
 	
 	
 	A<int> a;
+	//A<dumb> b;
 	//A(1);
 	//A<int> a(1);
 	int x = 5;
@@ -59,3 +57,87 @@ int main()
 
 	return 0;
 }
+
+/******************************************************************************
+
+							  Online C++ Compiler.
+			   Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+template<class T>
+void multiply(T a, T b)
+{
+	cout << a * b << endl;
+}
+
+template<class T>
+void multiply(T* a, T* b)
+{
+	cout << *a * *b << endl;
+}
+
+template<>
+void multiply(char a, char b)
+{
+	cout << "Ha Ha Ha" << endl;
+}
+
+int main()
+{
+	//cout<<"Hello World";
+	multiply(4, 7);//int
+	multiply(12.55, 13.6);//double
+	multiply<int>(3, 5.5);//int
+	multiply(12.4f, 3.4f);//float
+
+	int a = 5, b = 10;
+	multiply(&a, &b);//int*
+	double c = 3.3, d = 5.5;
+	multiply(&c, &d);//double*
+	multiply('a', 'b');//char
+	return 0;
+}
+//
+//#include <iostream>
+//
+//using namespace std;
+//
+//template<class T>
+//void multiply(T a, T b)
+//{
+//	cout << a * b << endl;
+//}
+//
+//template<class T>
+//void multiply(T* a, T* b)
+//{
+//	cout << *a * *b << endl;
+//}
+//
+//template<>
+//void multiply(char a, char b)
+//{
+//	cout << "Ha Ha Ha" << endl;
+//}
+//
+//int main()
+//{
+//	//cout<<"Hello World";
+//	multiply(4, 7);//int
+//	multiply(12.55, 13.6);//double
+//	multiply<int>(3, 5.5);//int
+//	multiply(12.4f, 3.4f);//float
+//
+//	int a = 5, b = 10;
+//	multiply(&a, &b);//int*
+//	double c = 3.3, d = 5.5;
+//	multiply(&c, &d);//double*
+//	multiply('a', 'b');//char
+//	return 0;
+//}

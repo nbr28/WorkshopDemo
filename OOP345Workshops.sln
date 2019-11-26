@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Enum", "Enum\Enum.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Iterators", "Iterators\Iterators.vcxproj", "{A3CF67A9-5933-40F3-BABA-F75B5C3C6E7D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Threading", "Threading\Threading.vcxproj", "{F3ACF37C-CE4D-4A06-B118-1E08D6F6D7BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{A3CF67A9-5933-40F3-BABA-F75B5C3C6E7D}.Release|x64.Build.0 = Release|x64
 		{A3CF67A9-5933-40F3-BABA-F75B5C3C6E7D}.Release|x86.ActiveCfg = Release|Win32
 		{A3CF67A9-5933-40F3-BABA-F75B5C3C6E7D}.Release|x86.Build.0 = Release|Win32
+		{F3ACF37C-CE4D-4A06-B118-1E08D6F6D7BC}.Debug|x64.ActiveCfg = Debug|x64
+		{F3ACF37C-CE4D-4A06-B118-1E08D6F6D7BC}.Debug|x64.Build.0 = Debug|x64
+		{F3ACF37C-CE4D-4A06-B118-1E08D6F6D7BC}.Debug|x86.ActiveCfg = Debug|Win32
+		{F3ACF37C-CE4D-4A06-B118-1E08D6F6D7BC}.Debug|x86.Build.0 = Debug|Win32
+		{F3ACF37C-CE4D-4A06-B118-1E08D6F6D7BC}.Release|x64.ActiveCfg = Release|x64
+		{F3ACF37C-CE4D-4A06-B118-1E08D6F6D7BC}.Release|x64.Build.0 = Release|x64
+		{F3ACF37C-CE4D-4A06-B118-1E08D6F6D7BC}.Release|x86.ActiveCfg = Release|Win32
+		{F3ACF37C-CE4D-4A06-B118-1E08D6F6D7BC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
