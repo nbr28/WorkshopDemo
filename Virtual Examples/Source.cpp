@@ -41,7 +41,8 @@ int main()
 
 	Child child2;
 	p_Pointer = &child2;
-	p_Pointer->hi();//child
+	p_Pointer->hi();
+	p_Pointer->Parent::hi();
 
 	
 	Grandchild grandchild2;
@@ -77,6 +78,7 @@ int main()
 	for (int i = 0; i < 4; i++)
 	{
 		baseArray[i]->iSay();
+		//baseArray[i]->(Parent)hi();
 	}
 
 	return 0;
