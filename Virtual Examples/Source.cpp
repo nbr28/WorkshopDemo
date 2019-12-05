@@ -7,6 +7,14 @@
 
 using namespace std;
 
+void WhoIsCool(iTalk& obj)
+{
+	static int x = 0;
+	cout << "Person number: " << x << " is " 
+		<< (obj.IamCool() ? "Cool" : "Not Cool" )<< endl;
+	x++;
+}
+
 int main()
 {
 
@@ -19,7 +27,6 @@ int main()
 	parent.hi();
 	child.hi();
 	grandchild.hi();
-
 	
 
 	cout << "--------" << endl;
@@ -78,8 +85,10 @@ int main()
 	for (int i = 0; i < 4; i++)
 	{
 		baseArray[i]->iSay();
+		WhoIsCool(*(baseArray[i]));
 		//baseArray[i]->(Parent)hi();
 	}
+	//iTalk x;
 
 	return 0;
 }

@@ -10,4 +10,8 @@ public:
 	{
 		cout << "I love my children" << endl;
 	}
+	virtual bool IamCool()
+	{
+		return true;
+	}
 };

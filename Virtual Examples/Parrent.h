@@ -18,4 +18,9 @@ public:
 	{
 		cout << "I hate Taxes" << endl;
 	}
+	
+	virtual bool IamCool()
+	{
+		return false;
+	}
 };

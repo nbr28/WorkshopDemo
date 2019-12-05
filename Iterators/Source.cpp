@@ -9,6 +9,7 @@ void printMe(T dataArray)
 {
 	for (auto i = dataArray.begin(); i != dataArray.end(); i++)
 	{
+		
 		cout << *i << " ";
 	}
 	cout << endl;
@@ -42,9 +43,12 @@ int main()
 	int countOut = count(lst.begin(), lst.end(), 4);
 	cout << countOut << endl;
 
-	for (auto i : vec)
+	for (int& i : vec)
 	{
 		cout << i << endl;
 	}
+
+
+	//std::for_each(vec.begin(), vec.end(), [](auto i) {i++; cout << i << endl; });
 	return 0;
 }
